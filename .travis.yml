@@ -1,0 +1,9 @@
+
+before_install:
+  - nvm install 10.15.3
+
+install:
+  - npm i
+
+script:
+  - cd start-small-client && sh build.sh
