@@ -1,0 +1,32 @@
+{
+  "name": "start-small-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node dist/server.js",
+    "build": "node_modules/.bin/tsc",
+    "test": "node_modules/.bin/jest",
+    "watch": "npm test -- --watchAll",
+    "lint": "node_modules/.bin/tslint src/**/*.ts",
+    "fix": "node_modules/.bin/tslint src/**/*.ts --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@marblejs/core": "^2.3.1",
+    "@marblejs/middleware-body": "^2.3.1",
+    "@marblejs/middleware-logger": "^2.3.1",
+    "rxjs": "^6.5.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.4",
+    "@types/supertest": "^2.0.8",
+    "jest": "^24.9.0",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.6.2"
+  }
+}

@@ -7,3 +7,4 @@ install:
 
 script:
   - cd start-small-client && sh build.sh
+  - cd ../start-small-server && sh build.sh
