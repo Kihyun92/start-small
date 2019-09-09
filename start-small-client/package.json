@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "node_modules/.bin/jest",
+    "watch": "npm test -- --watchAll",
     "lint": "node_modules/.bin/tslint src/**/*.ts",
     "fix": "node_modules/.bin/tslint src/**/*.ts --fix",
     "e2e": "node_modules/.bin/codeceptjs run --steps"
